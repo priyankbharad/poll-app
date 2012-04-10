@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Facebook_testActivity!</string>
+    <string name="app_name">Facebook_test</string>
+    <string-array name="sarray">
+        <item>Clothes</item>
+        <item>Technical stuff</item> 
+        <item>Academic</item>
+        <item>Accessories </item>
+    </string-array>
+    <string-array name="like_array">
+        <item>Likes-Dislikes</item>
+     
+    </string-array>
+
+</resources>

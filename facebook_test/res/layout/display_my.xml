@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">
+<RelativeLayout  
+    	android:id="@+id/mydisplayPoll"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@drawable/back_blue_grad"
+    	android:padding="0dp"
+    	android:orientation="vertical" >
+
+    	<TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Priyank Bharad"
+        android:textColor="#fff"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+       	<ImageView
+        android:id="@+id/p_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/final_fb" 
+    	android:layout_toLeftOf="@id/user_name"/>
+        <TextView
+        android:id="@+id/topic_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:text="Topic"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+        <TextView
+        android:id="@+id/topic_d_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topic_d"
+        android:text="your topic is...sdf.sdfsdfsdf"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+        <TextView
+        android:id="@+id/desc_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_d_ans"
+        android:layout_centerHorizontal="true"
+        android:text="Description"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+        <TextView
+        android:id="@+id/desc_d_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/desc_d"
+        android:text="your description is is...sdf.sdfsdfsdf"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="bold" 
+        android:maxLength="300"/>
+        <TextView
+        android:id="@+id/option_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/desc_d_ans"
+        android:text="Options"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+     	<RelativeLayout   
+        	android:layout_marginTop="30dp"
+        	android:id="@+id/displayPoll_2"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:layout_below="@id/option_d"
+    		android:visibility="invisible">		 
+          		<TextView
+		    	android:layout_marginTop="10dp"
+        		android:id="@+id/option_2_1"
+        		android:layout_width="100dp"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/shadedbutton11"
+		        android:layout_below="@id/desc_d_ans"
+		        android:text="Option 1"
+		        android:textColor="#fff"
+		        android:textSize="20dp"
+        		android:textStyle="bold" 
+        		android:gravity="center_horizontal"/>
+		 		<TextView
+				android:id="@+id/option_2_2"
+        		android:layout_width="100dp"
+        		android:layout_height="wrap_content"
+		        android:background="@drawable/shadedbutton11"
+        		android:layout_below="@id/option_2_1"
+        		android:text="Option 2"
+        		android:textColor="#fff"
+        		android:textSize="20dp"
+        		android:textStyle="bold"
+		        android:gravity="center_horizontal"
+		        android:layout_marginTop="20dp"/>
+		 		<TextView 
+				android:id="@+id/like_2_1"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/like"
+      			android:layout_toRightOf="@id/option_2_1"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="50dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+		  		<TextView 
+				android:id="@+id/dislike_2_1"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/dislike"
+      			android:layout_toRightOf="@id/like_2_1"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="10dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+          		<TextView 
+				android:id="@+id/like_2_2"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/like"
+      			android:layout_toRightOf="@id/option_2_1"
+      			android:layout_below="@id/like_2_1"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="50dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+		  		<TextView 
+				android:id="@+id/dislike_2_2"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/dislike"
+      			android:layout_toRightOf="@id/like_2_2"
+     			android:text=" 5"
+     			android:layout_below="@id/dislike_2_1"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="10dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+		 		<Button
+             	android:id="@+id/nextPoll"
+	            android:layout_width="100dp"
+             	android:layout_height="35dp"
+             	android:layout_alignParentBottom="true"
+             	android:layout_alignParentRight="true"
+             	android:background="@drawable/button_style1"
+             	android:gravity="center"
+             	android:text="Next Poll"
+             	android:textColor="#17160E"
+             	android:textSize="15dp"/>
+          		<Button
+             	android:id="@+id/back_Option"
+             	android:layout_width="100dp"
+             	android:layout_height="35dp"
+             	android:layout_alignParentBottom="true"
+             	android:layout_alignParentLeft="true"
+             	android:background="@drawable/button_style1"
+             	android:gravity="center"
+             	android:text="Back"
+             	android:textColor="#17160E"
+             	android:textSize="15dp" />			
+       		</RelativeLayout>
+       
+       
+       
+       
+       		<RelativeLayout
+        		android:layout_marginTop="30dp"
+        		android:id="@+id/displayPoll_3"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:layout_below="@id/option_d"
+    			android:visibility="invisible">    	 
+		 		<TextView
+        		android:id="@+id/option_3_1"
+		     	android:layout_marginTop="10dp"
+        		android:layout_width="110dp"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/shadedbutton11"
+        		android:layout_below="@id/desc_d_ans"
+        		android:text="Option_3_1"
+        		android:textColor="#fff"
+        		android:gravity="center_horizontal"
+        		android:textSize="20dp"
+        		android:textStyle="bold" />		
+		 		<TextView
+				android:id="@+id/option_3_2"
+         		android:gravity="center_horizontal"
+        		android:layout_width="110dp"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/shadedbutton11"
+        		android:layout_below="@id/option_3_1"
+        		android:text="Option 3_2"
+        		android:textColor="#fff"
+        		android:textSize="20dp"
+        		android:textStyle="bold" 
+        		android:layout_marginTop="20dp"/>
+		  		<TextView
+				android:id="@+id/option_3_3"
+        		android:layout_width="110dp"
+        		android:gravity="center_horizontal"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/shadedbutton11"
+        		android:layout_below="@id/option_3_2"
+        		android:text="Option 3_3"
+        		android:textColor="#fff"
+        		android:textSize="20dp"
+        		android:textStyle="bold" 
+        		android:layout_marginTop="20dp"/>
+		   		<TextView 
+				android:id="@+id/like_3_1"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/like"
+      			android:layout_toRightOf="@id/option_3_1"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="50dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+		  		<TextView 
+				android:id="@+id/dislike_3_1"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/dislike"
+      			android:layout_toRightOf="@id/like_3_1"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="10dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+          		<TextView 
+				android:id="@+id/like_3_2"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/like"
+      			android:layout_toRightOf="@id/option_3_2"
+      			android:layout_below="@id/like_3_1"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="50dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+		  		<TextView 
+				android:id="@+id/dislike_3_2"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/dislike"
+      			android:layout_toRightOf="@id/like_3_2"
+     			android:text=" 5"
+     			android:layout_below="@id/dislike_3_1"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="10dp"
+      			android:layout_marginTop="5dp"
+      			android:visibility="visible" />
+		   		<TextView 
+				android:id="@+id/like_3_3"
+        		android:layout_width="70dp"
+      			android:layout_height="35dp"
+      			android:background="@drawable/like"
+      			android:layout_toRightOf="@id/option_3_3"
+      			android:layout_below="@id/like_3_2"
+     			android:text=" 5"
+     			android:textSize="30dp"
+     			android:textColor="#fff"
+      			android:layout_marginLeft="50dp"
+      			android:layout_marginTop="5dp"
+		      	android:visibility="visible" />
+				<TextView 
+				android:id="@+id/dislike_3_3"
+		        android:layout_width="70dp"
+		      	android:layout_height="35dp"
+		      	android:background="@drawable/dislike"
+		      	android:layout_toRightOf="@id/like_3_3"
+		     	android:text=" 5"
+		     	android:layout_below="@id/dislike_3_2"
+		     	android:textSize="30dp"
+		     	android:textColor="#fff"
+		      	android:layout_marginLeft="10dp"
+		      	android:layout_marginTop="5dp"
+		      	android:visibility="visible" />  
+		        <Button
+		        android:id="@+id/nextPoll"
+		        android:layout_width="100dp"
+		        android:layout_height="35dp"
+             	android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/button_style1"
+	            android:gravity="center"
+	    	    android:text="Next Poll"
+	            android:textColor="#17160E"
+	            android:textSize="15dp" />
+	          <Button
+	            android:id="@+id/back_Option"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"	             
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:background="@drawable/button_style1"
+	            android:gravity="center"
+	            android:text="Back"
+	            android:textColor="#17160E"
+	            android:textSize="15dp" />
+       </RelativeLayout>
+       
+       <RelativeLayout  
+            android:layout_marginTop="30dp"
+        	android:id="@+id/imageDis"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:layout_below="@id/option_d"
+    		android:visibility="invisible">
+
+          <ImageButton
+              android:id="@+id/image1"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginLeft="103dp"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:textColor="#17160E"
+              android:textSize="15dp" />
+           <ImageButton
+              android:id="@+id/image2"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_below="@id/image1"
+              android:layout_marginLeft="103dp"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:textColor="#17160E"
+              android:textSize="15dp" />
+            <ImageButton
+              android:id="@+id/image3"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_below="@id/image2"
+              android:layout_marginLeft="103dp"
+              android:layout_marginTop="3dp"
+              android:gravity="center"
+              android:textColor="#17160E"
+              android:textSize="15dp" />
+          
+       </RelativeLayout>
+    	 
+</RelativeLayout>
+</ScrollView>

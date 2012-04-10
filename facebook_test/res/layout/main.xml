@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_blue_grad"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Poll box"
+        android:textColor="#ff6"
+        android:textSize="80dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/createPoll"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Create Poll"
+        android:textColor="#17160E"
+        android:textSize="25dp" 
+        android:background="@drawable/button_style1"/>
+
+    <Button
+        android:id="@+id/myPoll"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/createPoll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="My Poll"
+        android:textColor="#17160E"
+        android:textSize="25dp" 
+        android:background="@drawable/button_style1"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+       
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView 
+   android:id="@+id/p_image"
+   android:src="@drawable/final_fb"
+   android:layout_width="50dp"
+   android:layout_height="50dp"
+   android:layout_toLeftOf="@id/user_name"
+   android:layout_marginRight="10dp"
+   />
+
+    <Button
+        android:id="@+id/friendPoll"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/myPoll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style1"
+        android:gravity="center"
+        android:text="Friend's Poll"
+        android:textColor="#17160E"
+        android:textSize="25dp" />
+
+</RelativeLayout>
